@@ -10,7 +10,7 @@ function createCanvas(userInput) {
         canvasDiv.className = "canvas";
         container.appendChild(canvasDiv);
     }
-    onHover();
+    onHoverRandom();
 }
 
 function onHover() {
@@ -39,4 +39,16 @@ function promptForSquares() {
 function clearCanvas() {
     let canvas = document.querySelectorAll(".canvas");
     canvas.forEach(element => element.remove());
+}
+
+function onHoverRandom() {
+    let canvas = document.querySelectorAll(".canvas");
+    canvas.forEach(element => {
+        let red = Math.floor(Math.random() * 256);
+        let blue = Math.floor(Math.random() * 256);
+        let green = Math.floor(Math.random() * 256);
+        element.addEventListener("mouseover" , () => {
+        element.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+        });
+    });
 }
