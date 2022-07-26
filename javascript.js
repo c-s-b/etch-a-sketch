@@ -24,7 +24,7 @@ function onHover() {
 
 function promptForSquares() {
      let squaresButton = document.querySelector(".num-of-squares");
-     squaresButton = document.addEventListener("click" , () => {
+     squaresButton.addEventListener("click" , () => {
         let squares = Number(prompt("Enter the number squares you'd like in each row, between 1 and 100."));
         if(squares > 100 || squares <= 0|| isNaN(squares)) {
             alert("That didnt work. Please try again")
