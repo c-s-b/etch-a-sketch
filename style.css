@@ -7,6 +7,7 @@ main {
     display: flex;
     align-items: center;
     padding: 28px;
+    background-color: rgb(121, 142, 155);
 }
 
 .container {
@@ -15,6 +16,8 @@ main {
     width: 800px;
     display: grid; 
     border: thick double rgb(190, 157, 47);
+    box-shadow: 8px 6px 6px rgba(0, 0, 0, 0.3);
+    background-color: #ffffff;
 }
 
 .canvas {
@@ -27,9 +30,10 @@ main {
 button {
     background-color: rgb(228, 152, 11);
     border: double black;
-    border-radius: 4px;
+    border-radius: 8px;
     padding: 12px 24px;
     font-size: 24px;
+    box-shadow: 6px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
 .button-section-right {
@@ -41,6 +45,23 @@ button {
 
 .options-left {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+}
+
+.greeting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 52px;
+    margin-left: 16px;
+    margin-right: 16px;
+    border: thick double rgb(0, 0, 0);
+    background-color: rgb(190, 157, 47);
+    border-radius: 12px;
+    box-shadow: 8px 6px 6px rgba(0, 0, 0, 0.3);
+    padding: 8px;
 }
 
 
