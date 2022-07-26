@@ -1,4 +1,4 @@
-createCanvas(16);
+createCanvas(25);
 promptForSquares();
 function createCanvas(userInput) {
     let canvasDiv;
@@ -25,7 +25,7 @@ function onHover() {
 function promptForSquares() {
      let squaresButton = document.querySelector(".num-of-squares");
      squaresButton.addEventListener("click" , () => {
-        let squares = Number(prompt("Enter the number squares you'd like in each row, between 1 and 100."));
+        let squares = Number(prompt("Enter the number squares you'd like in each row, between 1 and 100. The default is 25."));
         if(squares > 100 || squares <= 0|| isNaN(squares)) {
             alert("That didnt work. Please try again")
         } else {
