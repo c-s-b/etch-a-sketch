@@ -12,12 +12,16 @@
                 <h1 class="greeting">
                     Welcome to My<wbr />Etch-a-Sketch!
                 </h1>
-                
+                    <div class="squares-input">
+                    <label for="num-of-squares" class="squares-label">Size of Canvas (1-100):</label>
+                    <input type="text" class="squares" name="num-of-squares" value="25">
+                    <button type="button" id="submit-squares">SUBMIT</button>
+                </div>
             </div>
             <div class="container">
             </div>
             <div class="button-section-right">
-                <button class="num-of-squares" type="button">Reset</button>
+                <button class="reset" type="button">Reset</button>
                 <ul class="options"> COLOR OPTIONS:
                     <li><input type="radio" id="black" name="color-option" checked>
                         <label for="black">BLACK</label> 

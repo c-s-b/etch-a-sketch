@@ -54,7 +54,7 @@ footer {
     padding: 0;
 }
 
-button {
+.reset {
     background-color: rgb(228, 152, 11);
     border: double black;
     border-radius: 8px;
@@ -86,6 +86,19 @@ button {
     box-shadow: 8px 6px 6px rgba(0, 0, 0, 0.3);
     padding: 48px;
     max-width: 350px;
+}
+
+.squares-input {
+    border: thick double rgb(0, 0, 0);
+    background-color: rgb(190, 157, 47);
+    border-radius: 12px;
+    box-shadow: 8px 6px 6px rgba(0, 0, 0, 0.3);
+    padding: 24px;
+}
+
+.squares {
+    font-size: 24px;
+    width: 100px;
 }
 
 .button-section-right {
