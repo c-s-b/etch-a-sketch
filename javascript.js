@@ -63,7 +63,8 @@ function promptForSquares() {
         submitSquares.addEventListener("click" , () => {
             let squares = Number(squaresInput.value);
             if(squares > 100 || squares <= 0|| isNaN(squares)) {
-                alert("That didnt work. Please try again")
+                alert("That didnt work. Please try again");
+                return;
             } else {
                 clearCanvas();
             }
